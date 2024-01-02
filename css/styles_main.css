@@ -1,0 +1,104 @@
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to right, #2a3c4e, #01002a);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container {
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 450px;
+    max-width: 100%;
+    height: 450px;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 175px; /* Ajusta el tamaño del logo según tus necesidades */
+    height: 105px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-bottom: 20px;
+}
+
+.align_column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    margin-left: 75px;
+}
+
+.social_icon {
+    margin: 25px;
+}
+
+/* Media query para dispositivos más pequeños */
+@media only screen and (max-width: 768px) {
+    .social {
+        flex-direction: row;
+        margin-top: 35px; /* Cambia a una columna en dispositivos más pequeños */
+        align-items: center;
+        margin-left: 0; /* Elimina el margen lateral para dispositivos más pequeños */
+    }
+
+    .social_icon {
+        margin: 10px; /* Ajusta el margen para dispositivos más pequeños */
+    }
+    .row-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 100%;
+    }
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
